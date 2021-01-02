@@ -25,6 +25,8 @@
   "uom",
   "conversion_factor",
   "stock_qty",
+  "cbm",
+  "volume",
   "section_break_17",
   "price_list_rate",
   "base_price_list_rate",
@@ -197,7 +199,6 @@
   {
    "fieldname": "uom",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "UOM",
    "options": "UOM",
    "reqd": 1
@@ -220,7 +221,8 @@
   },
   {
    "fieldname": "section_break_17",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "permlevel": 1
   },
   {
    "fieldname": "price_list_rate",
@@ -250,7 +252,8 @@
    "collapsible": 1,
    "fieldname": "discount_and_margin",
    "fieldtype": "Section Break",
-   "label": "Discount and Margin"
+   "label": "Discount and Margin",
+   "permlevel": 1
   },
   {
    "depends_on": "price_list_rate",
@@ -309,12 +312,12 @@
   },
   {
    "fieldname": "section_break_1",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "permlevel": 1
   },
   {
    "fieldname": "rate",
    "fieldtype": "Currency",
-   "in_list_view": 1,
    "label": "Rate",
    "oldfieldname": "export_rate",
    "oldfieldtype": "Currency",
@@ -325,7 +328,6 @@
   {
    "fieldname": "amount",
    "fieldtype": "Currency",
-   "in_list_view": 1,
    "label": "Amount",
    "oldfieldname": "export_amount",
    "oldfieldtype": "Currency",
@@ -380,7 +382,8 @@
   },
   {
    "fieldname": "section_break_25",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "permlevel": 1
   },
   {
    "fieldname": "net_rate",
@@ -605,6 +608,7 @@
   {
    "fieldname": "against_sales_order",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Against Sales Order",
    "no_copy": 1,
    "options": "Sales Order",
@@ -731,12 +735,27 @@
    "no_copy": 1,
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "item_code.cbm",
+   "fieldname": "cbm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "CBM"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "volume"
   }
  ],
  "idx": 1,
  "istable": 1,
- "links": [],
- "modified": "2020-08-20 11:18:33.131672",
+ "modified": "2020-10-12 17:53:35.442800",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Delivery Note Item",

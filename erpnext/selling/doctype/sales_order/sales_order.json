@@ -394,6 +394,7 @@
    "fieldtype": "Section Break",
    "label": "Currency and Price List",
    "options": "fa fa-tag",
+   "permlevel": 1,
    "print_hide": 1
   },
   {
@@ -497,7 +498,8 @@
   {
    "fieldname": "pricing_rule_details",
    "fieldtype": "Section Break",
-   "label": "Pricing Rules"
+   "label": "Pricing Rules",
+   "permlevel": 1
   },
   {
    "fieldname": "pricing_rules",
@@ -525,6 +527,7 @@
    "fieldtype": "Currency",
    "label": "Total (Company Currency)",
    "options": "Company:company:default_currency",
+   "permlevel": 1,
    "print_hide": 1,
    "read_only": 1
   },
@@ -570,7 +573,8 @@
    "fieldtype": "Section Break",
    "label": "Taxes and Charges",
    "oldfieldtype": "Section Break",
-   "options": "fa fa-money"
+   "options": "fa fa-money",
+   "permlevel": 1
   },
   {
    "fieldname": "tax_category",
@@ -593,7 +597,8 @@
   },
   {
    "fieldname": "section_break_40",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "permlevel": 1
   },
   {
    "fieldname": "taxes_and_charges",
@@ -616,7 +621,8 @@
    "collapsible": 1,
    "fieldname": "sec_tax_breakup",
    "fieldtype": "Section Break",
-   "label": "Tax Breakup"
+   "label": "Tax Breakup",
+   "permlevel": 1
   },
   {
    "fieldname": "other_charges_calculation",
@@ -629,7 +635,8 @@
   },
   {
    "fieldname": "section_break_43",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "permlevel": 1
   },
   {
    "fieldname": "base_total_taxes_and_charges",
@@ -681,7 +688,8 @@
    "collapsible_depends_on": "discount_amount",
    "fieldname": "section_break_48",
    "fieldtype": "Section Break",
-   "label": "Additional Discount and Coupon Code"
+   "label": "Additional Discount and Coupon Code",
+   "permlevel": 1
   },
   {
    "fieldname": "coupon_code",
@@ -727,6 +735,7 @@
    "fieldtype": "Section Break",
    "oldfieldtype": "Section Break",
    "options": "fa fa-money",
+   "permlevel": 1,
    "print_hide": 1
   },
   {
@@ -899,6 +908,7 @@
    "label": "More Information",
    "oldfieldtype": "Section Break",
    "options": "fa fa-file-text",
+   "permlevel": 1,
    "print_hide": 1
   },
   {
@@ -952,7 +962,8 @@
    "collapsible": 1,
    "fieldname": "printing_details",
    "fieldtype": "Section Break",
-   "label": "Print Settings"
+   "label": "Print Settings",
+   "permlevel": 1
   },
   {
    "fieldname": "language",
@@ -1083,6 +1094,7 @@
    "label": "Commission",
    "oldfieldtype": "Section Break",
    "options": "fa fa-group",
+   "permlevel": 1,
    "print_hide": 1
   },
   {
@@ -1125,6 +1137,7 @@
    "fieldname": "section_break1",
    "fieldtype": "Section Break",
    "label": "Sales Team",
+   "permlevel": 1,
    "print_hide": 1
   },
   {
@@ -1144,6 +1157,7 @@
    "fieldtype": "Section Break",
    "label": "Auto Repeat Section",
    "no_copy": 1,
+   "permlevel": 1,
    "print_hide": 1,
    "read_only": 1
   },
@@ -1196,7 +1210,7 @@
  "icon": "fa fa-file-text",
  "idx": 105,
  "is_submittable": 1,
- "modified": "2020-07-01 12:39:57.698621",
+ "modified": "2020-09-17 15:53:11.618760",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Sales Order",

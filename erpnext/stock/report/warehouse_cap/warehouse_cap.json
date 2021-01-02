@@ -1,0 +1,46 @@
+{
+ "add_total_row": 1,
+ "creation": "2020-09-03 03:33:01.095991",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "modified": "2020-09-17 17:46:20.106250",
+ "modified_by": "Administrator",
+ "module": "Stock",
+ "name": "Warehouse cap",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Item",
+ "report_name": "Warehouse cap",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "Item Manager"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Purchase User"
+  },
+  {
+   "role": "Maintenance User"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Manufacturing User"
+  }
+ ]
+}

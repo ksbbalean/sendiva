@@ -6,6 +6,9 @@
  "field_order": [
   "warehouse",
   "item_code",
+  "cbm",
+  "current_capacity",
+  "maximum_capacity_in_cbm",
   "reserved_qty",
   "actual_qty",
   "ordered_qty",
@@ -161,12 +164,29 @@
    "oldfieldname": "stock_value",
    "oldfieldtype": "Currency",
    "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.cbm",
+   "fieldname": "cbm",
+   "fieldtype": "Float",
+   "label": "CBM"
+  },
+  {
+   "fieldname": "maximum_capacity_in_cbm",
+   "fieldtype": "Float",
+   "label": "Maximum Capacity in CBM",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "current_capacity",
+   "fieldtype": "Float",
+   "label": "Current Capacity"
   }
  ],
  "hide_toolbar": 1,
  "idx": 1,
  "in_create": 1,
- "modified": "2019-11-18 18:34:59.456882",
+ "modified": "2020-10-12 17:58:41.245710",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Bin",
@@ -196,5 +216,6 @@
  ],
  "quick_entry": 1,
  "search_fields": "item_code,warehouse",
+ "sort_field": "modified",
  "sort_order": "ASC"
 }

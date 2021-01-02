@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "hash",
  "creation": "2013-03-29 18:22:12",
  "doctype": "DocType",
@@ -25,6 +24,7 @@
   "quantity_and_rate",
   "set_basic_rate_manually",
   "qty",
+  "cbm",
   "basic_rate",
   "basic_amount",
   "additional_cost",
@@ -467,7 +467,6 @@
    "fetch_from": "item_code.item_group",
    "fieldname": "item_group",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Item Group"
   },
   {
@@ -497,15 +496,19 @@
    "depends_on": "eval:parent.purpose===\"Repack\" && doc.t_warehouse",
    "fieldname": "set_basic_rate_manually",
    "fieldtype": "Check",
-   "label": "Set Basic Rate Manually",
-   "show_days": 1,
-   "show_seconds": 1
+   "label": "Set Basic Rate Manually"
+  },
+  {
+   "fetch_from": "item_code.cbm",
+   "fieldname": "cbm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "CBM"
   }
  ],
  "idx": 1,
  "istable": 1,
- "links": [],
- "modified": "2020-06-08 12:57:03.172887",
+ "modified": "2020-10-12 16:01:08.205988",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Entry Detail",

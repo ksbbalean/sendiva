@@ -1,6 +1,5 @@
 {
- "actions": [],
- "autoname": "naming_series:",
+ "autoname": "field:order_no",
  "creation": "2019-07-11 16:03:13.681045",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -10,6 +9,7 @@
   "company",
   "purpose",
   "customer",
+  "order_no",
   "work_order",
   "material_request",
   "for_qty",
@@ -110,11 +110,17 @@
    "options": "STO-PICK-.YYYY.-",
    "reqd": 1,
    "set_only_once": 1
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Link",
+   "label": "Order No",
+   "options": "Sales Order",
+   "unique": 1
   }
  ],
  "is_submittable": 1,
- "links": [],
- "modified": "2020-03-17 11:38:41.932875",
+ "modified": "2020-10-12 15:09:06.001270",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Pick List",

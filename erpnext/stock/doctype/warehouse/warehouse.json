@@ -9,6 +9,7 @@
  "field_order": [
   "warehouse_detail",
   "warehouse_name",
+  "capacity_in_cbm",
   "section_break_3",
   "warehouse_type",
   "parent_warehouse",
@@ -229,13 +230,21 @@
   {
    "fieldname": "section_break_3",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "capacity_in_cbm",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Capacity in Cbm",
+   "set_only_once": 1
   }
  ],
  "icon": "fa fa-building",
  "idx": 1,
  "is_tree": 1,
- "links": [],
- "modified": "2020-08-03 18:41:52.442502",
+ "modified": "2020-09-17 13:55:58.830076",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Warehouse",
